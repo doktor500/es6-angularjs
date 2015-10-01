@@ -1,0 +1,15 @@
+<section id="todoapp" ng-init="todoController.loadTodos()">
+  <header id="header">
+    <h1>{{ todoController.title }}</h1>
+    <form ng-submit="todoController.add()">
+      <input id="new-todo" ng-model='todoController.newTodo.content' placeholder="{{ todoController.helpText }}" />
+    </form>
+  </header>
+  <ul id="todo-list" class="todo-list">
+    <li ng-repeat="todo in todoController.todos" ng-click="todoController.toggleCompleted(todo)" class="todo" >
+      <input class="toggle" type="checkbox" ng-checked="todo.completed" />
+      <label>{{ todo.content }}</label>
+      <button class="destroy" ng-click="todoController.delete(todo)"></button>
+    </li>
+  </ul>
+</section>

@@ -1,0 +1,14 @@
+{
+  "dev": {
+    "environment": "dev",
+    "backendURL": "http://localhost:8080"
+  },
+  "local": {
+    "environment": "local",
+    "backendURL": ""
+  },
+  "prod": {
+    "environment": "prod",
+    "backendURL": "http://localhost:8080"
+  }
+}

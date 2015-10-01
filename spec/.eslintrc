@@ -1,0 +1,18 @@
+globals:
+    browser: true
+    element: true
+    by: true
+    describe: true
+    afterEach: true
+    beforeEach: true
+    it: true
+    expect: true
+    chai: true
+    sinon: true
+    spyOn: true
+
+rules:
+    no-unused-expressions: 0
+    no-empty-label: 0
+    no-label-var: 0
+    no-labels: 0
